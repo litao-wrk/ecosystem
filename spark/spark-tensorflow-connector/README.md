@@ -147,7 +147,7 @@ Run PySpark with the spark_connector in the jars argument as shown below:
 
 The following Python code snippet demonstrates usage on test data.
 
-```
+```py
 from pyspark.sql.types import *
 
 path = "test-output.tfrecord"
@@ -168,7 +168,7 @@ df.show()
 
 #### Python inference with pandas_udf and estimators (requires spark >= 2.4)
 
-```
+```py
 import pandas as pd
 import pyspark
 from pyspark.sql.functions import struct, pandas_udf
